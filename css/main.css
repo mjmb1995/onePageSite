@@ -1,5 +1,5 @@
 body {
-	background-color: black;
+  background: #161616 url(pattern_40.gif) top left repeat;
 	color: #fff;
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
@@ -59,8 +59,8 @@ body {
     min-height: 100vh;
     color:  white;
     /* Gray Filter */
-    -webkit-filter: grayscale(.8); /* Google Chrome, Safari 6+ & Opera 15+ */
-	  filter: grayscale(.8);  /* Microsoft Edge and Firefox 35+ */
+    -webkit-filter: grayscale(.6); /* Google Chrome, Safari 6+ & Opera 15+ */
+	  filter: grayscale(.6);  /* Microsoft Edge and Firefox 35+ */
 }
 
 #inner {
@@ -68,7 +68,7 @@ body {
   font-weight: 500;
 	border: 2.5px solid white;
 	text-decoration: none;
-  background-color: rgba(10, 10, 10, 0.6);
+  background-color: rgba(10, 10, 10, 0.65);
   margin: .5% 0;
   -vendor-animation-duration: 500s;  
 }
@@ -81,92 +81,96 @@ body {
 	font-size: 50px;
 }
 
+.section {
+  margin: 3% 0 3% 0;
+}
+
+.section#aboutMe {
+  margin-top: 6%;
+}
+
 
 /*about me section*/
+
 
 #aboutMe {
   margin-top: 2.5%;
 }
 
+
 #aboutText {
-  margin-top: 3.5%;
+  margin-top: 12%;
 }
 
 /* skills section */
 
-#skills {
-  margin-top: 2.5%;
+
+
+.content{
+  width:350px;
+  margin:0;
+  position:relative;
+  float:left;
+  font-size:12px;
+  line-height:2em;
+  padding:30px 0 30px;
 }
 
-.skillbar {
-  position: relative;
-  display: block;
-  margin-bottom: 15px;
-  width: 100%;
-  background: #cccccc;
-  height: 35px;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -webkit-transition: 0.4s linear;
-  -moz-transition: 0.4s linear;
-  -ms-transition: 0.4s linear;
-  -o-transition: 0.4s linear;
-  transition: 0.4s linear;
-  -webkit-transition-property: width, background-color;
-  -moz-transition-property: width, background-color;
-  -ms-transition-property: width, background-color;
-  -o-transition-property: width, background-color;
-  transition-property: width, background-color;
+#skill { 
+  list-style:none; 
+  padding-top:30px;
 }
 
-.skillbar-title {
+#skill li { 
+  margin-bottom:70px; 
+  background:#000; 
+  height:5px; 
+  border-radius:3px; 
+  border-left:1px solid #111; 
+  border-top:1px solid #111; 
+  border-right:1px solid #333; 
+  border-bottom:1px solid #333;  
+  font-size: 20px;
+}
+
+#skill li em { 
+  position:relative; 
+  top:-30px;
+}
+
+.expand { 
+  height:5px; 
+  margin:2px 0; 
+  background:#2187e7; 
   position:absolute;
-  top:0;
-  left:0;
-width:110px;
-  font-weight:bold;
-  font-size:13px;
-  color:#ffffff;
-  background:#666666;
-  -webkit-border-top-left-radius:3px;
-  -webkit-border-bottom-left-radius:4px;
-  -moz-border-radius-topleft:3px;
-  -moz-border-radius-bottomleft:3px;
-  border-top-left-radius:3px;
-  border-bottom-left-radius:3px;
+  box-shadow:0px 0px 10px 1px rgba(0,198,255,0.4);
 }
 
-.skillbar-title span {
-  display: block;
-  background: rgba(0, 0, 0, 0.1);
-  padding: 0 20px;
-  height: 35px;
-  line-height: 35px;
-  -webkit-border-top-left-radius: 3px;
-  -webkit-border-bottom-left-radius: 3px;
-  -moz-border-radius-topleft: 3px;
-  -moz-border-radius-bottomleft: 3px;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
+.html5       { width:80%;  -moz-animation:html5 10s ease-out;       -webkit-animation:html5 10s ease-out;       }
+.css3        { width:70%;  -moz-animation:css3 10s ease-out;        -webkit-animation:css3 10s ease-out;        }
+.git         { width:70%;  -moz-animation:git 10s ease-out;      -webkit-animation:git 10s ease-out;      }
+.boot3       { width:65%;  -moz-animation:boot3 10s ease-out;      -webkit-animation:boot3 10s ease-out;      }
+.ecma5       { width:50%;  -moz-animation:ecma5 10s ease-out;      -webkit-animation:ecma5 10s ease-out;      }
+.jquery      { width:35%;  -moz-animation:jquery 10s ease-out;      -webkit-animation:jquery 10s ease-out;      }
+.ajax        { width:30%;  -moz-animation:ajax 10s ease-out;   -webkit-animation:ajax 10s ease-out;   }
+.firebase    { width:20%; -moz-animation:firebase 10s ease-out; -webkit-animation:firebase 10s ease-out; }
 
-.skillbar-bar {
-  height: 35px;
-  width: 0px;
-  background: #996699;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-}
+@-moz-keyframes html5       { 0%  { width:0px;} 100%{ width:70%;}  }
+@-moz-keyframes css3        { 0%  { width:0px;} 100%{ width:90%;}  }
+@-moz-keyframes git         { 0%  { width:0px;} 100%{ width:70%;}  }
+@-moz-keyframes boot3       { 0%  { width:0px;} 100%{ width:65%;}  }
+@-moz-keyframes ecma5       { 0%  { width:0px;} 100%{ width:50%;}  }
+@-moz-keyframes jquery      { 0%  { width:0px;} 100%{ width:35%;}  }
+@-moz-keyframes ajax        { 0%  { width:0px;} 100%{ width:30%;}  }
+@-moz-keyframes firebase    { 0%  { width:0px;} 100%{ width:20%;} }
 
-.skill-bar-percent {
-  position: absolute;
-  right: 10px;
-  top: 0;
-  font-size: 11px;
-  height: 35px;
-  line-height: 35px;
-  color: #000000;
-}
+@-webkit-keyframes html5       { 0%  { width:0px;} 100%{ width:70%;}  }
+@-webkit-keyframes css3        { 0%  { width:0px;} 100%{ width:90%;}  }
+@-webkit-keyframes git         { 0%  { width:0px;} 100%{ width:70%;}  }
+@-webkit-keyframes boot3       { 0%  { width:0px;} 100%{ width:65%;}  }
+@-webkit-keyframes ecma5       { 0%  { width:0px;} 100%{ width:50%;}  }
+@-webkit-keyframes jquery      { 0%  { width:0px;} 100%{ width:35%;}  }
+@-webkit-keyframes ajax        { 0%  { width:0px;} 100%{ width:30%;}  }
+@-webkit-keyframes firebase    { 0%  { width:0px;} 100%{ width:20%;} }
+
 

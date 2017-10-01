@@ -11,6 +11,9 @@
 	<!-- animate css -->
 	<link rel="stylesheet"
   	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+  	<link rel="canonical" href="http://www.alessioatzeni.com/wp-content/tutorials/html-css/CSS3-Skill-Bar-Animation/index.html" />
+
   	<!-- custom css -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 
@@ -69,72 +72,87 @@
 	</header>
 
 	<!-- about me section -->
-	<div class="row" id="aboutMe">
+	<div class="row section" id="aboutMe">
 		<div class="col-sm-2"></div>
 		
-		<div class="col-sm-3">
-			<h2>About Me</h2>
-			<!-- photo -->
-			<img src="https://via.placeholder.com/250x250">
+		<div class="col-sm-4">
+			<div class="row header">
+				<h1>About Me</h1>
+			</div>
+			<div class="row">
+				<!-- photo -->
+				<img id="myPic" src="https://via.placeholder.com/300x300">
+			</div>
 		</div>
 		<!-- text section -->
-		<div class="col-sm-5" id="aboutText">
-			<p>
-			In 2015 I was one out of 1000 applicants to be accepted in to the Year Up program. Year Up is a non-profit program that provides intensive training to place young adults into Fortune 500 companies. I was selected to be part of the selective Information Security cohort.
+		<div class="col-sm-4">
+			<div class="row"></div>
+			<div class="row"  id="aboutText">
+				<p>
+				In 2015 I was one out of 1000 applicants to be accepted in to the Year Up program. Year Up is a non-profit program that provides intensive training to place young adults into Fortune 500 companies. I was selected to be part of the selective Information Security cohort.
+				<br>
+				<br>
+				I started at Macy's as a Risk and Security Intern. I was involved with many aspects of security from vendor management, risk assessment and cloud security. I then joined the Strategic Procurement division as a Contracts Administrator.
+				I spend most of my time reviewing and approving contractor requisitions. I also conduct data analysis and create reports for my team and our senior leadership.
+				<br>
+				<br>
+				I am currently in the UC Berkeley Full Stack Development bootcamp. I will graduate in the first week of February 2018. I am excited to learn new skills and see the new opportunities that come my way. 
+				</p>
+			</div>
 			<br>
 			<br>
-			I started at Macy's as a Risk and Security Intern. I was involved with many aspects of security from vendor management, risk assessment and cloud security. I then joined the Strategic Procurement division as a Contracts Administrator.
-			I spend most of my time reviewing and approving contractor requisitions. I also conduct data analysis and create reports for my team and our senior leadership.
 			<br>
-			<br>
-			I am currently in the UC Berkeley Full Stack Development bootcamp. I will graduate in the first week of February 2018. I am excited to learn new skills and see the new opportunities that come my way. 
-			</p>
 		</div>
 
-		<div class="col-sm-3"></div>
 	</div>
 
-	<section class="row" id="skills">
+	<section class="row section" id="skills">
 		<div class="col-sm-2"></div>
 		<div class="col-sm-8">
-			<h1>Current Skills</h1>
+			<div class="row header">
+				<h1>Current Skills</h1>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-6">
 
-			<div class="skillbar clearfix " data-percent="80%">
-				<div class="skillbar-title""><span>HTML5</span></div>
-				<div class="skillbar-bar"></div>
-				<div class="skill-bar-percent">80%</div>
-			</div> <!-- End Skill Bar -->
+					<div class="content">
+				        <ul id="skill">
+				        <li><span class="expand html5"></span><em>HTML 5</em></li>
+				        <li><span class="expand git"></span><em>Git</em></li>
+				        <li><span class="expand ecma5"></span><em>EcmaScript 5</em></li>
+				        <li><span class="expand ajax"></span><em>Ajax</em></li>
+				        </ul>
+				    </div>
+				</div>
 
-			<div class="skillbar clearfix " data-percent="70%">
-				<div class="skillbar-title"><span>CSS3</span></div>
-				<div class="skillbar-bar"></div>
-				<div class="skill-bar-percent">70%</div>
-			</div> <!-- End Skill Bar -->
+				<div class="col-sm-6">
+					 <div class="content">
+				        <ul id="skill">
+				        <li><span class="expand css3"></span><em>CSS 3</em></li>
+				        <li><span class="expand boot3"></span><em>Bootstrap 3</em></li>
+				        <li><span class="expand jquery"></span><em>jQuery</em></li>
+				        <li><span class="expand firebase"></span><em>FireBase</em></li>
+				        </ul>
+				    </div>
 
-			<div class="skillbar clearfix " data-percent="50%">
-				<div class="skillbar-title"><span>EcmaScript</span></div>
-				<div class="skillbar-bar"></div>
-				<div class="skill-bar-percent">50%</div>
-			</div> <!-- End Skill Bar -->
+				</div>
+				<br>
+			</div>
 
-			<div class="skillbar clearfix " data-percent="35%">
-				<div class="skillbar-title"><span>jQuery</span></div>
-				<div class="skillbar-bar"></div>
-				<div class="skill-bar-percent">35%</div>
-			</div> <!-- End Skill Bar -->
 
-			<div class="skillbar clearfix " data-percent="30%">
-				<div class="skillbar-title" ><span>Ajax</span></div>
-				<div class="skillbar-bar"></div>
-				<div class="skill-bar-percent">30%</div>
-			</div> <!-- End Skill Bar -->
+			
 
-			<div class="skillbar clearfix " data-percent="20%">
-				<div class="skillbar-title" ><span>FireBase</span></div>
-				<div class="skillbar-bar"></div>
-				<div class="skill-bar-percent">20%</div>
-			</div> <!-- End Skill Bar -->
-		</div>
+			
+
+			
+
+			
+
+			
+
+
+			
 		<div class="col-sm-2"></div>
 		
 	</section>
