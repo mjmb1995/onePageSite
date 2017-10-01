@@ -1,5 +1,5 @@
 body {
-  background: #161616 url(pattern_40.gif) top left repeat;
+  background: #161616 url(../img/pattern_40.gif) top left repeat;
 	color: #fff;
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
@@ -116,12 +116,12 @@ body {
   padding:30px 0 30px;
 }
 
-#skill { 
+.skills { 
   list-style:none; 
   padding-top:30px;
 }
 
-#skill li { 
+#skills li { 
   margin-bottom:70px; 
   background:#000; 
   height:5px; 
@@ -133,7 +133,7 @@ body {
   font-size: 20px;
 }
 
-#skill li em { 
+#skills li em { 
   position:relative; 
   top:-30px;
 }
