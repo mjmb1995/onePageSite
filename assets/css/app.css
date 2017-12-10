@@ -2,6 +2,24 @@
 General
 ******************************************************************** */
 
+/* *******************************************************************
+Nav Bar
+******************************************************************** */
+#navBar {
+	background-color: black;
+}
+
+
+.top-bar, .top-bar ul {
+     background-color: black; 
+}
+.menu li a {
+  color: #e62739 !important;
+}
+
+h4 {
+  color: #e62739 !important;
+}
 
 /* *******************************************************************
 Header
@@ -31,9 +49,7 @@ Header
   width: 100%;
 }
 
-.menu li a {
-  color: #e62739 !important;
-}
+
 
 .hero-full-screen .middle-content-section {
 	text-align: center;
