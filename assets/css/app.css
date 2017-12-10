@@ -1,0 +1,83 @@
+/* *******************************************************************
+General
+******************************************************************** */
+
+
+/* *******************************************************************
+Header
+******************************************************************** */
+.hero-full-screen {
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: url("../img/sanFranSkyline.jpg") center center no-repeat;
+  background-size: cover;
+      /* Gray Filter */
+/*    -webkit-filter: grayscale(.75);  Google Chrome, Safari 6+ & Opera 15+ 
+	  filter: grayscale(.56);  /* Microsoft Edge and Firefox 35+ */
+}
+
+.hero-full-screen .top-content-section {
+  width: 100%;
+}
+
+.menu li a {
+  color: #e62739 !important;
+}
+
+.hero-full-screen .middle-content-section {
+	text-align: center;
+	font-weight: 500;
+	border: 2.5px solid white;
+	background-color: rgba(10, 10, 10, 0.4);
+	color: #e62739;
+	padding: 35px;
+}
+
+
+
+.hero-full-screen .bottom-content-section {
+  padding: 1rem;
+}
+
+.hero-full-screen .bottom-content-section svg {
+  height: 3.75rem;
+  width: 3.75rem;
+  fill: #fefefe;
+}
+
+.hero-full-screen .top-bar {
+  background: transparent;
+}
+
+.hero-full-screen .top-bar .menu {
+  background: transparent;
+}
+
+.hero-full-screen .top-bar .menu-text {
+  color: #fefefe;
+}
+
+.hero-full-screen .top-bar .menu li {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-full-screen .top-bar .menu a {
+  color: #fefefe;
+  font-weight: bold;
+}
